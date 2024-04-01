@@ -138,8 +138,11 @@ cursor: pointer;
 
 
 
-.greeb-btn{
+.greenBtn{
  background: #1ED800; 
+padding-inline:5px;
+padding-block: 5px;
+border-radius: 25px 25px 25px 25px;
 }
 
 
