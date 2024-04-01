@@ -1,0 +1,225 @@
+
+
+
+body{
+background: #02353C0F;
+}
+
+.bg-gradient{
+    background: #02353C !important;
+    background: linear-gradient(to right, #02353C, #2EAF7D) !important;
+    padding-block: 20px;
+}
+
+.navcustom input{
+  max-width: 421px;
+border-radius: 25px 25px 25px 25px;
+height: 40px;
+}
+
+.navcustom input:focus{
+box-shadow: none;
+border-color: #0f6142;
+}
+
+
+.admin{
+gap: 8px !important;
+}
+
+.admin img{
+height: 30px;
+}
+
+.admin span{
+font-size: 15px;
+}
+
+.admin i {
+font-size: 12px;
+}
+.sidebar-heading a{
+padding-inline: 40px !important;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5px;
+}
+.sidebar-heading li a span{
+color: #02353C;
+font-size: 16px;
+line-height: 29px;
+}
+
+.svgcustom{
+fill: #02353C;
+}
+
+.side-heading:hover{
+    background: #02353C !important;
+    background: linear-gradient(to right, #021A1E, #299B6F) !important;
+    border-radius:25px 25px 25px 25px;
+    color: white;
+  
+}
+
+.sidebar-body{
+max-width: 262px;
+}
+
+.side-heading:hover span{
+ color: white;
+}
+
+.side-heading:hover .svgcustom{
+ fill: white;
+}
+
+
+.add-program-btn{
+background-color: #3FD0C9;
+padding-inline: 18px;
+padding-block: 6px;
+border-radius: 25px 25px 25px 25px;
+line-height: 29px;
+font-size: 16px;
+}
+
+.add-program-btn:hover{
+background-color: #34a59f;
+
+}
+.add-program-btn i{
+font-size: 12px;
+}
+
+.program-heading, a, i{
+  font-size: 13px !important;
+line-height: 24px;
+text-decoration: none;
+}
+
+.program-heading a:hover{
+text-decoration: underline;
+}
+
+
+.input-program h3{
+font-size: 34px;
+line-height: 49px;
+color: #02353C;
+font-weight: 700;
+}
+.input-program input{
+max-width: 298px;
+border-radius: 25px 25px 25px 25px;
+
+}
+.input-program input::placeholder{
+color: #757575;
+}
+
+.input-program input:focus{
+box-shadow: none;
+border-color: green;
+} 
+
+
+.program-input-div{
+max-width: 298px;
+}
+
+.searchicon{
+top: 9px;
+right: 18px;
+font-size: 20px !important;
+cursor: pointer;
+}
+
+
+
+.greeb-btn{
+ background: #1ED800; 
+}
+
+
+@media (max-width:992px) {
+    .navcustom input {
+display: none;
+}
+.logo-farm{
+width: 100px;
+}
+
+.add-program-btn{
+
+padding-inline: 15px;
+padding-block: 6px;
+
+line-height: 20px;
+font-size: 13px;
+}
+.add-program-btn i{
+font-size: 8px;
+}
+.input-program h3{
+font-size: 28px;
+line-height: 40px;
+
+}
+}
+
+@media (max-width:1350px) {
+    .sidebar-heading a{
+padding-inline: 25px !important;
+}
+}
+
+@media (max-width:630px) {
+    .main-top-header{
+display: flex !important;
+flex-direction: column;
+align-items: start !important;
+gap: 5px;
+}
+.input-program h3{
+font-size: 20px;
+line-height: 30px;
+
+}
+}
+
+
+@media (max-width:374px) {
+    .add-program-btn{
+
+padding-inline: 8px;
+padding-block: 6px;
+
+line-height: 14px;
+font-size: 10px;
+}
+.add-program-btn i{
+font-size: 5px;
+}
+.program-heading, a, i{
+  font-size: 10px !important;
+line-height: 16px;
+text-decoration: none;
+}
+.main-content-body{
+margin-inline: 8px !important;
+}
+.main-content-body{
+padding-inline: 10px !important;
+}
+.input-program input {
+    font-size: 13px !important;
+}
+.searchicon{
+/* top: 9px;
+right: 18px;
+font-size: 20px !important; */
+height: 15px ;
+}
+}
