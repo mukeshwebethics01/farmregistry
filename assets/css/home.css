@@ -13,21 +13,26 @@ font-family: "Anek Bangla", sans-serif;
     position: sticky;
     top: 0;
     z-index: 1;
+    border-bottom: 4px solid #6ebebc;
 }
 
 .header-searchInput{
 width: 421px;
+
 }
 
 .navcustom input{
   max-width: 421px;
 border-radius: 25px 25px 25px 25px;
 height: 40px;
+border: none;
+padding-left: 25px;
 
 }
 
 .navcustom input::placeholder{
 color: #CCCCCC;
+
 }
 
 .navcustom input:focus{
@@ -41,7 +46,9 @@ gap: 8px !important;
 }
 
 .admin img{
-height: 30px;
+height: 40px;
+width: 40px;
+margin-right: 5px;
 }
 
 .admin span{
@@ -73,9 +80,13 @@ transition: 100ms all;
 fill: #02353C;
 }
 
-
+.cardflex {
+margin-bottom: 10px;
+}
 .side-heading{
 height: 40px;
+width: 100%;
+display: flex;
 }
 
 
@@ -85,6 +96,8 @@ height: 40px;
     border-radius:6px 6px 6px 6px;
     color: white;
     padding-right: 73px;
+    width: 100%;
+    display: flex;
 }
 
   
@@ -215,6 +228,11 @@ border-color: green;
 
 .program-input-div{
 max-width: 298px;
+
+}
+
+.program-input-div input{
+padding-left: 20px;
 }
 
 .searchicon{
@@ -242,12 +260,16 @@ border-radius: 25px 25px 25px 25px;
 color: white;
 }
 
+.mobile-toggle i {
+cursor: pointer;
+}
 
 
 .hamburger-icon{
 font-size: 20px !important;
 color: white;
 display: none;
+cursor: pointer;
 }
 
 .cardBody h4{
@@ -259,13 +281,13 @@ line-height: 29px;
 
 
 .cardBody{
-background-color:#02353C0F ;
+background-color:#02353C0F;
 padding-block: 30px;
-max-width: 329px;
 border-radius:6px;
 padding-left: 30px;
-padding-right: 5px ;
-border-right: 8px solid #b4c5c3;
+padding-right: 5px;
+border: none;
+border-right: 8px solid #c2cecc !important;
 }
 
 
@@ -273,7 +295,8 @@ border-right: 8px solid #b4c5c3;
 .main-content-body{
 margin-inline: 37px;
 margin-left: 35px;
-
+ min-height: 100vh;
+padding-inline: 0px;
 }
 
 .cards-outer-body{
@@ -346,9 +369,12 @@ position: fixed;
 .slideXanimation{
   animation-name: animation1;
   animation-duration: 300ms;
-  animation-timing-function: ease-in-out;
-  transform-origin: left;
+  animation-timing-function:ease;
+  transform-origin: left ;
 }
+
+
+
 @keyframes animation1 {
   from{
   transform: scaleX(0);
@@ -360,7 +386,31 @@ to{
 }
 
 
+.menu-dropdown{
+  top: 100%;
+  left: -30px !important;
+  /* margin-top: var(--bs-dropdown-spacer); */
+  top: 34px !important;
+}
 
+.dropdown-style::after{
+background-image: url("../../assets/images/dropdown-icon.svg");
+content: "";
+border: 0;
+/* background-size: 20px; */
+background-repeat: no-repeat;
+width: 20px;
+height:11px;
+background-position:center;
+position: relative;
+top: 5px;
+
+}
+
+.admin-name{
+font-size: 14px !important;
+line-height: 26px ;
+}
 
 @media (max-width:860px) {
     .navcustom .header-searchInput {
@@ -368,6 +418,14 @@ display: none;
 }
 .logo-farm{
 width: 100px;
+}
+
+.main-top-header {
+padding-inline:0px !important;
+}
+
+.main-content-body {
+padding-inline: 10px;
 }
 
 .add-program-btn{
@@ -407,10 +465,7 @@ display: none;
 
 }
 
-.side-heading:hover{
- 
-    /* padding-right: 85% !important; */
-}
+
 .mobilesidebar-heading{
 font-size: 16px;
 }
@@ -431,7 +486,9 @@ width: 100%;
 }
 .main-content-body{
 margin-inline: 0px !important;
+
 }
+
 .mobilesidebar-heading{
 display: block !important;
 }
@@ -439,6 +496,7 @@ display: block !important;
 margin-left: 0px !important;
 align-items: start !important;
 padding-inline:10px;
+width: 100%;
 }
 .mobile-sidebar-header{
 display: block !important;
@@ -452,6 +510,12 @@ width: 100% !important;
 }
 .mobile-sidebar-header{
 padding-inline: 10px;
+}
+.cards-outer-body {
+  margin-inline: 0px;
+}
+.input-program{
+padding-inline:0px !important;
 }
 }
 
@@ -479,8 +543,41 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+
+.card-btn{
+margin-right: 8px;
+width: 75px;
 }
 
+.program-input-div{
+width: 100% !important;
+}
+.cardBody{
+padding-block: 10px;
+border-radius: 6px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.cardflex{
+margin-bottom: 7px !important;
+gap: 5px !important;
+}
+.cardBody h4 {
+  font-weight: 600;
+  line-height: 20px ;
+}
+.greenBtn{
+width: 92px;
+padding-block: 2px;
+padding-inline: 0px;
+}
+}
+
+@media (max-width:1078px) and (min-width:991px) {
+   .cardBody{
+padding-left: 10px;
+} 
+}
 
 @media (max-width:374px) {
     .add-program-btn{
@@ -491,14 +588,18 @@ padding-block: 6px;
 line-height: 14px;
 font-size: 10px;
 }
-.add-program-btn i{
+
+
+
+
+/* .add-program-btn i{
 font-size: 5px;
-}
-.program-heading, a, i{
+} */
+/* .program-heading, a, i{
   font-size: 10px !important;
 line-height: 16px;
 text-decoration: none;
-}
+} */
 /* .main-content-body{
 margin-inline: 8px !important;
 } */
@@ -515,12 +616,16 @@ right: 18px;
 font-size: 20px !important; */
 height: 19px ;
 }
+
 }
 
 
 @media (max-width:575px) {
 .admin .name, .name-down-arrow{
 display: none ;
+}
+.menu-dropdown{
+ left: 106px !important;
 }
 
 }
