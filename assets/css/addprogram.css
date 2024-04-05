@@ -1,0 +1,51 @@
+
+
+
+.inputCustom{
+max-width: 250px;
+
+}
+
+.inputCustom input, .select-option{
+background: #F5F5F5;
+border: none;
+height: 54px;
+border-bottom: 1px solid #666666;
+border-radius: 4px 4px 0 0;
+} 
+
+.inputCustom input:focus{
+box-shadow: none;
+background: #F5F5F5;
+
+}
+
+
+.selectForm{
+height: 6px;
+
+}
+
+.selectForm select:focus{
+box-shadow: none;
+}
+
+
+.selectForm img{
+bottom: -21px;
+  right: 19px;
+}
+
+.selectForm select{
+width: 250px;
+}
+
+
+/* @media (max-width:860px) {
+.inputCustom{
+display: flex;
+
+flex-direction: column;
+}
+
+}  */

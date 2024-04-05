@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/bootsrap-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/addprogram.css">
 </head>
 
 <body>
@@ -213,244 +214,88 @@
                         <i class="fa-solid fa-angle-right"></i>
                         <a href="#" class="text-black">All programs</a>
                     </div>
-                    <a href="addprogram.html"
-                        class="btn add-program-btn fw-bold d-flex align-items-center gap-1 outline-none">
-                        <i class="fa-solid fa-plus fw-bold"></i>
-                        Add new program
-                    </a>
+
                 </div>
+
                 <div class="input-program px-4 mx-3">
-                    <h3>6 Programs</h3>
+                    <h3>Add a new program</h3>
+                    <p>Please fill the following form to add a new program.</p>
 
-                    <div class="position-relative program-input-div">
-
-                        <input type="text" placeholder="Search a program" class="form-control ">
-
-                        <img src="assets/images//search-icon.svg" alt="" class="position-absolute searchicon">
-                        <!-- <i class="fa-solid fa-magnifying-glass "></i> -->
-                    </div>
                 </div>
-                <!-- MuiGrid-root MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-lg-4 css-17qee9k  -->
-                <div class="cards-outer-body mt-4 pt-2 pr-4 row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                    <div class="col mb-4">
-                        <div class="card-body cardBody card">
-                            <div class=" d-flex align-items-center justify-content-between cardflex ">
-                                <h5 class="card-title">Axereal</h5>
 
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Registered</span></button>
-                            </div>
-                            <h4 class="mt-2">Colza Bas GES</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Label Bas Carbone Grandes Cultures</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
 
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
+                <div class="mt-4 pt-2 px-4 mx-3">
+                    <h4>Program information</h4>
+                    <select class="form-select inputCustom select-option mb-4" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <div class=" inputCustom">
+                            <input type="text" class="form-control" placeholder="Program name*">
+                        </div>
+                        <div class=" inputCustom">
+                            <input type="text" class=" form-control" placeholder="Program code*">
+                        </div>
+                        <div class=" selectForm d-flex position-relative">
 
+                            <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card-body cardBody  card">
-                            <div class="d-flex align-items-center justify-content-between cardflex">
-                                <h5 class="card-title">Axereal</h5>
-
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Active</span></button>
-                            </div>
-                            <h4 class="mt-2">Malt Neutre</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Verra VCS</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
-
+                    <div class="d-flex gap-2 mb-4">
+                        <div class=" inputCustom ">
+                            <input type="text" class="form-control" placeholder="Company lead developer">
+                        </div>
+                        <div class=" inputCustom">
+                            <input type="text" class="form-control" placeholder="Program external ID">
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card-body cardBody card">
-                            <div class="d-flex align-items-center justify-content-between cardflex">
-                                <h5 class="card-title">Axereal</h5>
+                    <div class="d-flex gap-2 mb-4">
+                        <div class=" selectForm d-flex position-relative">
 
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Active</span></button>
-                            </div>
-                            <h4 class="mt-2">Malt Neutre</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Verra VCS</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
+                            <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                <option selected>Country*</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
+                        </div>
+                        <div class=" selectForm d-flex position-relative">
 
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
-
+                            <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                <option selected>Region*</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
+                        </div>
+                        <div class=" inputCustom">
+                            <input type="text" class=" form-control" placeholder="Location*">
                         </div>
                     </div>
-                    <div class="col mb-4">
+                    <div class="d-flex gap-2 mb-4">
+                        <div class=" selectForm d-flex position-relative">
 
-                        <div class="card-body cardBody card">
-                            <div class="d-flex align-items-center justify-content-between cardflex">
-                                <h5 class="card-title">Axereal</h5>
-
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Active</span></button>
-                            </div>
-                            <h4 class="mt-2">Colza Bas GES</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Label Bas Carbone Grandes Cultures</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
-
+                            <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                <option selected>Fields color*</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
                         </div>
-                    </div>
-                    <div class="col mb-4">
-
-                        <div class="card-body cardBody card">
-                            <div class="d-flex align-items-center justify-content-between cardflex">
-                                <h5 class="card-title">Axereal</h5>
-
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Active</span></button>
-                            </div>
-                            <h4 class="mt-2">Malt Neutre</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Verra VCS</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-
-                        <div class="card-body cardBody card">
-                            <div class="d-flex align-items-center justify-content-between cardflex">
-                                <h5 class="card-title">Axereal</h5>
-
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Active</span></button>
-                            </div>
-                            <h4 class="mt-2">Malt Neutre</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Verra VCS</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-
-                        <div class="card-body cardBody card">
-                            <div class="d-flex align-items-center justify-content-between cardflex">
-                                <h5 class="card-title">Axereal</h5>
-
-                                <button class="greenBtn btn"><i class="fa-solid fa-check"></i>
-                                    <span>Active</span></button>
-                            </div>
-                            <h4 class="mt-2">Malt Neutre</h4>
-                            <div>
-                                <span>Type</span>
-                                <h4>Regenerative Agriculture</h4>
-                            </div>
-                            <div class="mb-2">
-                                <span>Standard</span>
-                                <h4>Verra VCS</h4>
-                            </div>
-                            <div class="">
-                                <div class="d-flex align-items-center mb-3 gap-3 cardflex">
-                                    <button class="btn btn-green card-btn"> Issued</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-
-                                <div class="d-flex align-items-center gap-3 cardflex">
-                                    <button class="btn dark-green-btn card-btn"> Retired</button>
-                                    <div class="amount"><span>141.200</span> TCO2e </div>
-                                </div>
-                            </div>
-
+                        <div class=" inputCustom">
+                            <input type="file" class="form-control pt-3 pl-2" placeholder="Program image">
                         </div>
                     </div>
                 </div>
