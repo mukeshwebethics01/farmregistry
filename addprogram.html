@@ -208,7 +208,7 @@
             <!-- side bar content  -->
 
             <div class="col py-3  main-content-body bg-white ">
-                <div class="d-flex justify-content-between align-items-center main-top-header py-2 px-4 mx-3">
+                <div class="d-flex justify-content-between align-items-center main-top-header py-2 px-4 ">
                     <div class="d-flex align-items-center gap-1 program-heading">
                         <a href="#" class="text-black">Programs</a>
                         <i class="fa-solid fa-angle-right"></i>
@@ -217,94 +217,232 @@
 
                 </div>
 
-                <div class="input-program px-4 mx-3">
+                <div class="input-program px-4 ">
                     <h3>Add a new program</h3>
                     <p>Please fill the following form to add a new program.</p>
 
                 </div>
 
 
-                <div class="mt-4 pt-2 px-4 mx-3">
-                    <h4>Program information</h4>
-                    <select class="form-select inputCustom select-option mb-4" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
+                <div class="px-4  inputs-container">
+                    <h4 class="main-headings fw-bold">Program information</h4>
+                    <div class="position-relative active-status">
+                        <select class="form-select inputCustom active-info select-option mb-4"
+                            aria-label="Default select example">
+                            <option selected>ACTIVE</option>
+                            <option value="1">OFF</option>
+
+                        </select>
+                        <span class="position-absolute">Status</span>
+                    </div>
+                    <div class="d-flex flex-wrap gap-4 mb-4">
                         <div class=" inputCustom">
                             <input type="text" class="form-control" placeholder="Program name*">
                         </div>
                         <div class=" inputCustom">
                             <input type="text" class=" form-control" placeholder="Program code*">
                         </div>
-                        <div class=" selectForm d-flex position-relative">
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
 
-                            <select class="form-select   select-option mb-4" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Type*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-2 mb-4">
+                    <div class="d-flex flex-wrap gap-4 mb-4">
                         <div class=" inputCustom ">
-                            <input type="text" class="form-control" placeholder="Company lead developer">
+                            <input type="text" class="form-control" placeholder="Company lead developer*">
                         </div>
                         <div class=" inputCustom">
                             <input type="text" class="form-control" placeholder="Program external ID">
                         </div>
                     </div>
-                    <div class="d-flex gap-2 mb-4">
-                        <div class=" selectForm d-flex position-relative">
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
 
-                            <select class="form-select   select-option mb-4" aria-label="Default select example">
-                                <option selected>Country*</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Country*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
                         </div>
-                        <div class=" selectForm d-flex position-relative">
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
 
-                            <select class="form-select   select-option mb-4" aria-label="Default select example">
-                                <option selected>Region*</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Region*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
                         </div>
                         <div class=" inputCustom">
                             <input type="text" class=" form-control" placeholder="Location*">
                         </div>
                     </div>
-                    <div class="d-flex gap-2 mb-4">
-                        <div class=" selectForm d-flex position-relative">
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
 
-                            <select class="form-select   select-option mb-4" aria-label="Default select example">
-                                <option selected>Fields color*</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <img class="position-relative" src="assets/images/select-icon.png" alt="">
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Fields color*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 add-img">
+                            <div class=" inputCustom mb-4 position-relative upload-img">
+                                <input type="file" class="form-control pt-3 pl-2" placeholder="Program image*">
+                                <img class="position-absolute" src="assets/images/uploadimg-icon.svg" alt="">
+                                <div class="small-charac ">File format .jpg, .png, .gif, .svg</div>
+                            </div>
+                            <div>
+                                <img src="assets/images//img-captured.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textarea-container">
+                        <textarea class="textArea" name="" id="" cols="30" rows="10"
+                            placeholder="Program description*"></textarea>
+                        <div class="d-flex justify-content-between "><span class="small-charac">Maximum 200
+                                characters</span>
+                            <span class="small-charac">0/200</span>
+                        </div>
+                    </div>
+                    <h4 class="main-headings fw-bold mt-5 pt-3">Methodology</h4>
+                    <div class="d-flex gap-4 flex-wrap">
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
+
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Registry*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
+
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Standard*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class=" inputCustom mb-4">
+                            <input type="text" class=" form-control" placeholder="Methodology*">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-4">
+
+                        <div class=" inputCustom  position-relative upload-img">
+                            <input type="file" class="form-control pt-3 pl-2" placeholder="Program image">
+                            <img class="position-absolute" src="assets/images/uploadimg-icon.svg" alt="">
+                            <div class="small-charac ">File format .pdf</div>
+                        </div>
+
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
+
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Exclusive farm*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
+
+                                <select class="form-select   select-option mb-4" aria-label="Default select example">
+                                    <option selected>Exclusive field*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="d-flex flex-wrap gap-4 mt-4">
+                        <div class=" inputCustom position-relative upload-img">
+                            <input type="file" class="form-control pt-3 pl-2 " placeholder="Program image">
+                            <img class="position-absolute" src="assets/images/datetime.svg" alt="">
+                            <div class="small-charac ">DD/MM/YYYY</div>
+                        </div>
+
+
+                        <div class=" inputCustom position-relative upload-img">
+                            <input type="file" class="form-control pt-3 pl-2" placeholder="Program image">
+                            <img class="position-absolute" src="assets/images/datetime.svg" alt="">
+                            <div class="small-charac ">DD/MM/YYYY</div>
+                        </div>
+
+
+                        <div class=" inputCustom position-relative upload-img">
+                            <input type="file" class="form-control pt-3 pl-2" placeholder="Program image">
+                            <img class="position-absolute" src="assets/images/datetime.svg" alt="">
+                            <div class="small-charac ">DD/MM/YYYY</div>
+                        </div>
+                        <div class="customSelect">
+                            <div class=" selectForm d-flex position-relative">
+
+                                <select class="form-select   select-option " aria-label="Default select example">
+                                    <option selected>Unit*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img class="position-absolute" src="assets/images/select-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="main-headings fw-bold mt-5">Fees</h4>
+
+                    <div class="d-flex flex-wrap gap-4 mb-4">
+                        <div class=" inputCustom">
+                            <input type="text" class="form-control" placeholder="Farmer fees*">
                         </div>
                         <div class=" inputCustom">
-                            <input type="file" class="form-control pt-3 pl-2" placeholder="Program image">
+                            <input type="text" class="form-control" placeholder="Program developer fees*">
+                        </div>
+                        <div class=" inputCustom">
+                            <input type="text" class="form-control" placeholder=" Registry fees*">
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <script src="assets/js//bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+        <script src="assets/js//bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>

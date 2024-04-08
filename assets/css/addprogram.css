@@ -2,23 +2,38 @@
 
 
 .inputCustom{
-max-width: 250px;
+width: 250px;
 
 }
 
-.inputCustom input, .select-option{
+.inputs-container{
+padding-left: 43px !important;
+}
+
+.inputCustom input, .select-option, .textArea{
 background: #F5F5F5;
 border: none;
 height: 54px;
 border-bottom: 1px solid #666666;
-border-radius: 4px 4px 0 0;
+border-radius: 3px 3px 0 0;
 } 
 
 .inputCustom input:focus{
 box-shadow: none;
 background: #F5F5F5;
-
+border-color: #666666;
 }
+
+.textArea:focus-visible{
+  overflow: hidden;
+  outline: none;
+}
+
+.textArea, .textarea-container{
+width: 530px;
+height: 80px;
+}
+
 
 
 .selectForm{
@@ -28,24 +43,112 @@ height: 6px;
 
 .selectForm select:focus{
 box-shadow: none;
+border-color: #666666;
+
+}
+
+.selectForm select{
+color: #666666;
 }
 
 
 .selectForm img{
 bottom: -21px;
-  right: 19px;
+right: 19px;
 }
 
-.selectForm select{
+.selectForm{
 width: 250px;
 }
 
 
-/* @media (max-width:860px) {
-.inputCustom{
-display: flex;
-
-flex-direction: column;
+.customSelect{
+min-height: 61px;
 }
 
-}  */
+
+.upload-img img{
+right: 13px;
+top: 14px;
+width :18px;
+height :20px;
+}
+
+.upload-img input[type="file"]{
+font-size: -10px;
+background: #F5F5F5;
+color: transparent;
+}
+
+.small-charac{
+font-size: 14px;
+color: #666666;
+padding-inline: 10px;
+}
+
+.main-headings{
+font-size:20px; 
+line-height: 37px;
+color: #02353C;
+}
+
+.active-info{
+color: #1BC000;
+}
+
+.active-info:focus{
+box-shadow: none;
+outline: none;
+border: #666666;
+}
+
+.active-status span{
+top: 0px;
+left: 14px;
+font-size: 14px;
+color: #666666;
+}
+
+.textArea{
+padding: 15px;
+}
+
+
+
+@media (max-width:607px) {
+  .selectForm{
+width: 100%;
+}
+.inputCustom{
+width: 100%;
+
+}
+.customSelect{
+width: 100%;
+}
+.textArea, .textarea-container{
+width: 100%;
+}
+.input-program p {
+text-align: center;
+}
+.inputs-container{
+margin-top: 0px !important;
+}
+.add-img{
+width: 100%;
+}
+}
+
+
+
+
+@media (max-width:860px){
+  .inputs-container{
+padding-inline: 8px !important;
+}
+.inputs-container{
+padding-left: 0px;
+}
+
+}
