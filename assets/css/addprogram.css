@@ -7,7 +7,7 @@ width: 250px;
 }
 
 .inputs-container{
-padding-left: 43px !important;
+padding-left: 50px !important;
 }
 
 .inputCustom input, .select-option, .textArea{
@@ -74,11 +74,11 @@ width :18px;
 height :20px;
 }
 
-.upload-img input[type="file"]{
-font-size: -10px;
+/* .upload-img input[type="file"]{
+font-size: 15px;
 background: #F5F5F5;
-color: transparent;
-}
+} */
+
 
 .small-charac{
 font-size: 14px;
@@ -114,6 +114,56 @@ padding: 15px;
 }
 
 
+.file-input::file-selector-button{
+  border-color: #F5F5F5 !important;
+  background-color: #F5F5F5 !important ;
+  color: #666666 ;
+  /* font-size: 0px; */
+}
+
+.file-label{
+top: 0px !important;
+}
+
+.input-group-append {
+  cursor: pointer !important;
+}
+
+
+.date-inputes{
+background: #F5F5F5;
+border: none;
+height: 54px;
+border-bottom: 1px solid #666666;
+border-radius: 3px 3px 0 0;
+z-index: 0 !important;
+
+}
+
+.date-inputes .input-group {
+margin-bottom: 0px !important;
+}
+
+
+.date-inputes:focus{
+background-color: #F5F5F5;
+border-color: #666666;
+
+}
+
+.date-parent button{
+
+display: none;
+}
+
+.date-parent div{
+margin-bottom:0px !important;
+}
+
+
+.date-media{
+width: 250px;
+}
 
 @media (max-width:607px) {
   .selectForm{
@@ -135,9 +185,19 @@ text-align: center;
 .inputs-container{
 margin-top: 0px !important;
 }
+
 .add-img{
 width: 100%;
 }
+
+.date-inputes{
+width: 100% !important;
+}
+
+.date-media{
+width: 100%;
+}
+
 }
 
 
