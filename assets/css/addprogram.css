@@ -35,16 +35,9 @@ height: 80px;
 }
 
 
-
-.selectForm{
-height: 6px;
-
-}
-
 .selectForm select:focus{
 box-shadow: none;
 border-color: #666666;
-
 }
 
 .selectForm select{
@@ -59,13 +52,12 @@ right: 19px;
 
 .selectForm{
 width: 250px;
+height: 6px;
 }
-
 
 .customSelect{
 min-height: 61px;
 }
-
 
 .upload-img img{
 right: 13px;
@@ -74,10 +66,6 @@ width :18px;
 height :20px;
 }
 
-/* .upload-img input[type="file"]{
-font-size: 15px;
-background: #F5F5F5;
-} */
 
 
 .small-charac{
@@ -165,6 +153,16 @@ margin-bottom:0px !important;
 width: 250px;
 }
 
+.h3-headings{
+margin-bottom: 0px;
+}
+
+.inputsbox{
+gap: 35px;
+margin-bottom: 35px;
+}
+
+
 @media (max-width:607px) {
   .selectForm{
 width: 100%;
@@ -206,9 +204,6 @@ width: 100%;
 @media (max-width:860px){
   .inputs-container{
 padding-inline: 8px !important;
-}
-.inputs-container{
 padding-left: 0px;
 }
-
 }

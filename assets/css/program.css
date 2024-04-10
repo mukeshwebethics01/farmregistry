@@ -1,0 +1,27 @@
+
+.modify-btn{
+
+border: 1px solid #02353C;
+border-radius: 25px;
+padding-inline: 24px;
+padding-block: 6px;
+font-size: 16px !important;
+}
+
+.modify-btn:hover{
+border: 1px solid #02353C;
+background-color: #02353C;
+color: white;
+}
+
+.btns-parent{
+border: 1px solid #02353C;
+border-radius: 25px;
+padding-inline: 15px;
+padding-block: 0px;
+}
+
+.info-btns{
+border: 1px solid #02353C;
+border-radius:0px ;
+}
