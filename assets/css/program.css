@@ -14,65 +14,9 @@ background-color: #02353C;
 color: white;
 }
 
-/* .btns-parent{
-border: 1px solid #02353C;
-border-radius: 25px;
-padding-inline: 15px;
-padding-block: 0px;
-} */
 
-.info-btns{
-border: 1px solid #02353C;
-border-radius:0px ;
-font-size: 16px !important;
 
-}
 
-.info-btns:hover{
-border: 1px solid #02353C;
-}
-
-.info-btn-one{
-border-right: none;
-border-radius: 25px 0 0 25px;
-padding-inline: 37px;
-background: #02353C;
-color: white;
-}
-.info-btn-two{
-border-right: none;
-padding-inline: 37px;
-}
-.info-btn-three{
-border-right: none;
-padding-inline: 37px;
-}
-
-.info-btn-four{
-border-radius: 0 25px 25px 0;
-padding-inline: 37px;
-}
-
-.info-btn-one:hover{
-border-right: none;
-background: #02353C;
-color: white;
-}
-.info-btn-two:hover{
-border-right: none;
-background: #02353C;
-color: white
-}
-.info-btn-three:hover{
-border-right: none;
-background: #02353C;
-color: white
-}
-
-.info-btn-four:hover{
-background: #02353C;
-color: white
-}
 
 
 .main-headings{
@@ -91,13 +35,70 @@ min-width: 178px !important;
 margin-bottom: 15px;
 }
 
-.span-ans{
- 
+.checkbox-img img{
+ height: 60px;
+width: 60px;
+}
+
+.checkbox-img input{
+border: 1px solid black;
+margin-left: 0px !important;
+margin-right: 20px;
+}
+
+.checkbox-img input:focus{
+height: 15px;
+width: 15px;
+ box-shadow: none;
+border-color: black;
+} 
+
+
+.tab-one{
+border-radius: 25px 0 0 25px !important;
+border-right: none !important;
+
+}
+.tab-two{
+border-radius: 0 !important;
+
+border-right: none !important;
+
+}
+.tab-three{
+border-radius: 0 !important;
+
+border-right: none !important;
+
+}
+.tab-four{
+border-radius: 0 25px 25px 0 !important;
+
+}
+
+.tabcustom{
+border: 1px solid #02353C;
+color: #02353C;
+padding-inline: 37px;
+font-weight: 600;
+height: 38px;}
+
+.tab-one:hover, .tab-two:hover, .tab-three:hover,.tab-four:hover {
+color: #02353C;
+}
+
+.nav-pills .nav-link.active{
+background-color: #02353C;
+}
+
+.check-container{
+max-width: 480px;
+padding-left: 30px;
 }
 
 
 @media (max-width:1200px) {
-    .info-btn-one,.info-btn-two,.info-btn-three,.info-btn-four {
+  .tabcustom{
 
 padding-inline: 25px;
 
@@ -119,13 +120,20 @@ text-align: start !important;
 .program-info-container{
 margin-top: 15px !important;
 }
+ .check-container{
+
+padding-left: 0px;
+} 
 }
 
 @media (max-width:630px) {
-    .info-btn-one,.info-btn-two,.info-btn-three,.info-btn-four {
+    .tabcustom {
 
 padding-inline: 8px;
  font-size: 14px !important;
+}
+.program-header{
+margin-inline: 0px !important;
 }
 
 .modify-btn{
@@ -145,6 +153,124 @@ gap: 5px !important;
 .span-heading{
 margin-bottom: 4px;
 }
-    
+.program-info-container{
+padding-inline: 0px !important;
+}
+  
 }
 
+
+
+/* ..................projec tab tyle....................  */
+
+
+.export-btn{
+border: 1px solid #02353C;
+border-radius: 25px;
+padding-inline: 25px;
+font-weight: 500;
+height: 38px;
+}
+.export-btn:hover{
+border: 1px solid #02353C;
+background-color: #02353C;
+color: white;
+}
+
+.location-input{
+width: 298px;
+}
+
+.table-headings{
+white-space: nowrap;
+}
+
+.main-table th{
+border-bottom: 2px solid #CCCCCC;
+}
+.main-table td{
+border-bottom: 1px solid #CCCCCC;
+
+}
+
+.theadings th, .tdata td{
+font-size: 14px;
+ font-family: "Istok Web", sans-serif;
+}
+
+.perpage{
+border: 1px solid #757575;
+width: 72px;
+height: 42px;
+border-radius: 5px;
+}
+
+.leftslide{
+margin-right: 15px;
+font-size: 14px;
+}
+
+.rightslide{
+font-size: 14px;
+}
+
+.tfooter{
+display: flex ;
+justify-content: end;
+}
+
+.tfooter span{
+font-size: 14px;
+ font-family: "Istok Web", sans-serif;
+}
+.countpage{
+
+margin-inline:15px ;
+}
+
+@media (max-width:992px) {
+
+
+
+.table-container{
+margin-inline:0px !important;
+padding-inline:5px !important;
+margin-top: 0px !important;
+}
+}
+
+@media (max-width:630px) {
+    .location-input-container{
+display: flex;
+flex-direction: column;
+}
+.location-input{
+width: 100%;
+}
+.export-btn{
+width: 101px;
+padding-inline: 20px;
+font-size: 14px;
+
+}
+.exportbtn-parent{
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+.perpage{
+
+width: 65px;
+height: 32px;
+
+}
+}
+
+@media (max-width:360px) {
+  .tfooter-content{
+display: flex;
+flex-direction: column;
+align-items: end;
+gap: 8px;
+}
+}

@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/bootsrap-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/program.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -210,14 +212,446 @@
                 </div>
                 <div class="input-program px-4 mx-3 d-flex justify-content-between program-header">
                     <h3>Programs #0001</h3>
-                    <div class="btns-parent d-flex align-items-center"><a
-                            class="btn info-btns info-btn-one fw-medium">Details</a>
-                        <a class="btn info-btns info-btn-two fw-medium">Projects</a> <a
-                            class="btn info-btns info-btn-three fw-medium">Fields</a>
-                        <a class="btn info-btns info-btn-four fw-medium">Certification</a>
-                    </div>
+                    <ul class="nav nav-pills mb-3 buttons-tabs" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active tab-one tabcustom" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Details</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-two tabcustom" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Projects</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-three tabcustom" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Fields</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link tab-four tabcustom" id="pills-contact-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                                aria-selected="false">Certification</button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="px-4 mx-3 mt-5 pt-2 program-info-container">
+
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="px-4 mx-3 mt-5 pt-2 program-info-container">
+                            <div class="row  ">
+                                <div class="col-12 col-lg-6">
+                                    <h4 class="main-headings fw-bold">Program information</h3>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="status span-heading text-end">Status</span>
+                                            <button class="greenBtn active-btn btn span-ans"><i
+                                                    class="fa-solid fa-check"></i>
+                                                <span>Active</span></button>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">ID program</span>
+                                            <span class="span-ans fw-bold">0001</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Program name</span>
+                                            <span class="span-ans fw-bold">Axereal MaltNeutre</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Program code</span>
+                                            <span class="span-ans fw-bold">AXL001</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Type</span>
+                                            <span class="span-ans fw-bold">Regenerative agriculture</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Project developer</span>
+                                            <span class="span-ans fw-bold">Axereal</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Program external ID</span>
+                                            <span class="span-ans fw-bold">A246000</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Region</span>
+                                            <span class="span-ans fw-bold">Europe</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Country</span>
+                                            <span class="span-ans fw-bold">France</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Location</span>
+                                            <span class="span-ans fw-bold">Center</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Fields color</span>
+                                            <span class="span-ans fw-bold">color</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Program image</span>
+                                            <span class="span-ans fw-bold">image.jpg</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Description</span>
+                                            <span class="span-ans fw-bold">Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor
+                                                incididunt ut labore et dolore magna aliqua. </span>
+                                        </div>
+
+                                        <h4 class="main-headings fw-bold">Fees</h3>
+                                            <div class="data-info d-flex gap-3">
+                                                <span class="span-heading text-end">Farmer</span>
+                                                <span class="span-ans fw-bold"> 5%</span>
+                                            </div>
+                                            <div class="data-info d-flex gap-3">
+                                                <span class="span-heading text-end">Program developer</span>
+                                                <span class="span-ans fw-bold"> 5%</span>
+                                            </div>
+                                            <div class="data-info d-flex gap-3">
+                                                <span class="span-heading text-end">Registry</span>
+                                                <span class="span-ans fw-bold"> 5%</span>
+                                            </div>
+
+                                </div>
+                                <div class="col-12 col-lg-6">
+
+                                    <h4 class="main-headings fw-bold">Methodology</h3>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Registry</span>
+                                            <span class="span-ans fw-bold">Verra</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Standard</span>
+                                            <span class="span-ans fw-bold">VCS</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Methodology</span>
+                                            <span class="span-ans fw-bold">IPCC 2008</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Methodology contract</span>
+                                            <span class="span-ans fw-bold">methodo-contract.pdf</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Exclusive farm</span>
+                                            <span class="span-ans fw-bold">Yes</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Exclusive filed</span>
+                                            <span class="span-ans fw-bold">Yes</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Registration date</span>
+                                            <span class="span-ans fw-bold">06/24/2022</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Crediting period start date</span>
+                                            <span class="span-ans fw-bold">07/31/2022</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Crediting period end date</span>
+                                            <span class="span-ans fw-bold">Center</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Fields color</span>
+                                            <span class="span-ans fw-bold">06/31/2032</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Credit type</span>
+                                            <span class="span-ans fw-bold">Biodiversity credit</span>
+                                        </div>
+                                        <div class="data-info d-flex gap-3">
+                                            <span class="span-heading text-end">Unit</span>
+                                            <span class="span-ans fw-bold">Tons CO2eq</span>
+                                        </div>
+                                        <h4 class="main-headings fw-bold">Sustainable development goals</h3>
+                                            <div class="d-flex flex-wrap gap-4 check-container">
+                                                <div class="d-flex flex-column align-items-center checkbox-img gap-2">
+                                                    <img src="assets/images/imgone.svg" alt="">
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgtwo.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgthree.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgfour.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgfive.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgsix.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgeight.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgnine.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgten.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgeleven.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgtewlve.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgthirteen.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgfourteen.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgfifteen.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/sixteen.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                                    <img src="assets/images/imgseventeen.svg" alt="">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                        tabindex="0">
+                        <div class="px-4 mx-3 mt-5 pt-2 table-container ">
+
+                            <div class="d-flex justify-content-between location-input-container">
+                                <div class="input-program ">
+                                    <div class="position-relative program-input-div">
+                                        <input type="text" placeholder="Search Fields, Land-use, Location, ..."
+                                            class="form-control location-input">
+                                        <img src="assets/images//search-icon.svg" alt=""
+                                            class="position-absolute searchicon">
+                                    </div>
+                                </div>
+                                <div class="exportbtn-parent"> <button class="export-btn btn">Export.XLS</button> </div>
+
+                            </div>
+
+                            <div class="overflow-x-auto mt-3">
+                                <table class="table main-table">
+                                    <thead>
+                                        <tr class="theadings">
+                                            <th class="table-headings" scope="col">Ref. farmer</th>
+                                            <th class="table-headings" scope="col">Farmer name</th>
+                                            <th class="table-headings" scope="col">Zip code</th>
+                                            <th class="table-headings" scope="col">City</th>
+                                            <th class="table-headings" scope="col">Ref. project</th>
+                                            <th class="table-headings" scope="col">Start</th>
+                                            <th class="table-headings" scope="col">End</th>
+                                            <th class="table-headings" scope="col">Ref. year</th>
+                                            <th class="table-headings" scope="col">Contract</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                        <tr class="tdata">
+                                            <td scope="row">123456543</td>
+                                            <td>GAEC DERA</td>
+                                            <td>28000</td>
+                                            <td>Orléans</td>
+                                            <td>AXL4545541</td>
+                                            <td>07/31/2022</td>
+                                            <td>07/31/2022</td>
+                                            <td>2022</td>
+                                            <td><img src="assets/images/tcontracticon.svg" alt=""></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tfooter mt-2 ">
+                                <div class="d-flex tfooter-content">
+                                    <div class="d-flex align-items-center gap-3"><span>Items per page:</span>
+                                        <div class="perpage d-flex justify-content-center align-items-center gap-3">
+                                            <span>10</span><img src="assets/images/select-icon.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ">
+                                        <span class=" countpage">Page 1
+                                            of 10</span>
+                                        <div class="slideicon"><i class="fa-solid fa-chevron-left leftslide"></i> <i
+                                                class="fa-solid fa-chevron-right rightslide"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                        tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                        tabindex="0">...</div>
+                </div>
+
+                <!-- <div class="px-4 mx-3 mt-5 pt-2 program-info-container">
                     <div class="row  ">
                         <div class="col-12 col-lg-6">
                             <h4 class="main-headings fw-bold">Program information</h3>
@@ -345,9 +779,111 @@
                                     <span class="span-ans fw-bold">Tons CO2eq</span>
                                 </div>
                                 <h4 class="main-headings fw-bold">Sustainable development goals</h3>
+                                    <div class="d-flex flex-wrap gap-4 check-container">
+                                        <div class="d-flex flex-column align-items-center checkbox-img gap-2">
+                                            <img src="assets/images/imgone.svg" alt="">
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+
+
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgtwo.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgthree.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgfour.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgfive.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgsix.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgeight.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgnine.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgten.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgeleven.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgtewlve.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgthirteen.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgfourteen.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgfifteen.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/sixteen.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column align-items-center  checkbox-img gap-2 ">
+                                            <img src="assets/images/imgseventeen.svg" alt="">
+                                               <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="">
+                                            </div>
+                                        </div>
+                                    </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
