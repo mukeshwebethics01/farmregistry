@@ -228,11 +228,11 @@ border-color: green;
 
 .program-input-div{
 max-width: 298px;
-
 }
 
 .program-input-div input{
 padding-left: 20px;
+padding-right: 44px;
 }
 
 .searchicon{

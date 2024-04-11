@@ -81,7 +81,9 @@ border: 1px solid #02353C;
 color: #02353C;
 padding-inline: 37px;
 font-weight: 600;
-height: 38px;}
+height: 38px;
+line-height: 10px !important;
+}
 
 .tab-one:hover, .tab-two:hover, .tab-three:hover,.tab-four:hover {
 color: #02353C;
