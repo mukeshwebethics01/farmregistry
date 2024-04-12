@@ -2,6 +2,9 @@ body{
 font-family: "Anek Bangla", sans-serif;
 }
 
+.cardbody{
+border-radius: 12px;
+}
 
 .farmlogin-bg{
 background: url("../../assets/images/farmloginBg.svg");
