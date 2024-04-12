@@ -1,7 +1,8 @@
 
 .modify-btn{
 
-border: 1px solid #02353C;
+background-color: #3FD0C9;
+color: black;
 border-radius: 25px;
 padding-inline: 24px;
 padding-block: 6px;
@@ -9,12 +10,94 @@ font-size: 16px !important;
 }
 
 .modify-btn:hover{
-border: 1px solid #02353C;
-background-color: #02353C;
-color: white;
+background-color: #37a19c;
 }
 
 
+.modal-heading{
+font-size: 34px;
+color: #02353C;
+font-weight:300;
+}
+
+.modal-heading strong{
+font-size: 34px;
+ font-weight: 700;
+margin-right: 5px;
+}
+
+.modaldailog{
+max-width: 679px !important;
+}
+
+
+.modalbody{
+margin-top: 135px;
+}
+
+.uploadfile{
+border: 1px dashed #666666;
+border-radius: 5px;
+height: 182px;
+background: #F5F5F5;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding:8px ;
+}
+
+.uploadfile p {
+text-align: center;
+font-weight: 600;
+}
+
+
+.uploadfile-pare{
+display: flex;
+justify-content: center;
+}
+
+
+.modalchild{
+padding: 40px;
+}
+
+
+.modalfooter{
+border-top: none;
+}
+
+.modal-btns  {
+width: 94px;
+border-radius: 25px;
+outline: none;
+height: 38px;
+}
+
+.modal-btns:hover{
+border: 1px solid black;
+}
+
+.cancel-btn{
+border: 1px solid black;
+}
+
+.cancel-btn:hover, .upload-btn:hover{
+border: 1px solid #3FD0C9;
+background-color: #3FD0C9;
+}
+
+.save-btn{
+background-color: #3FD0C9;
+}
+
+.upload-btn{
+border: 1px solid black;
+border-radius: 25px;
+height: 38px;
+width: 94px;
+}
 
 
 
@@ -126,6 +209,31 @@ margin-top: 15px !important;
 
 padding-left: 0px;
 } 
+
+.m-para-one{
+padding-block: 5px !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+
+.m-para-two{
+margin-bottom: 8px;
+}
+
+.modal-heading{
+font-size:25px;
+font-weight:300;
+}
+
+.modal-heading strong{
+font-size: 25px;
+font-weight: 600;
+margin-right: 5px;
+}
+.modalchild {
+  padding: 20px;
+}
+
 }
 
 @media (max-width:630px) {
@@ -143,7 +251,7 @@ margin-inline: 0px !important;
 
 padding-inline: 14px;
 padding-block: 3px;
-
+ font-size: 14px !important;
 }
 
 .data-info{
@@ -158,7 +266,27 @@ margin-bottom: 4px;
 .program-info-container{
 padding-inline: 0px !important;
 }
+
+.modal-btns {
+width: 80px;
+height: 30px;
+line-height: 10px;
+font-size: 14px;
+}
+.upload-btn {
+width: 90px;
+height: 30px;
+line-height: 10px;
+font-size: 14px;
+}
   
+}
+
+@media (max-width:340px) {
+  .modal-pop-btns{
+display: flex;
+flex-direction: column;
+}
 }
 
 
@@ -183,9 +311,7 @@ color: white;
 width: 298px;
 }
 
-.table-headings{
-white-space: nowrap;
-}
+
 
 .main-table th{
 border-bottom: 2px solid #CCCCCC;
@@ -198,6 +324,7 @@ border-bottom: 1px solid #CCCCCC;
 .theadings th, .tdata td{
 font-size: 14px;
  font-family: "Istok Web", sans-serif;
+white-space: nowrap;
 }
 
 .perpage{
@@ -210,6 +337,7 @@ border-radius: 5px;
 .leftslide{
 margin-right: 15px;
 font-size: 14px;
+opacity: 0.2;
 }
 
 .rightslide{
