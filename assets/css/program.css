@@ -131,7 +131,7 @@ width: 60px;
 .checkbox-img input{
 border: 1px solid black ;
 margin-left: 13px !important;
-accent-color: #02353C ;
+accent-color: #2e9792 ;
 height: 15px;
 width: 15px;
 }
@@ -386,8 +386,14 @@ margin-inline:15px ;
 
 
 
+
 @media (max-width:1024px) {
-  
+  .program-information{
+width: 100%;
+}
+.program-methodology{
+width: 100%;
+}
 }
 
 
